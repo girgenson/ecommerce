@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Product{% endblock %}
+
+{%  block content %}
+
+<h1>Product</h1>
+
+
+    <div class="col-10 mx-auto col-md-6 my-3">
+        <div>
+            <h1 class="product_title">Return of the Mac</h1>
+            <h5 class="text-info font-italic mb-4">$9.99</h5>
+        </div>
+    </div>
+
+
+
+    <div class="container py-1">
+        <div class="row mt-5">
+            <div class="col-10 mx-auto col-md-6 my-3">
+                <img src="{% static 'images/mac.png' %}">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-10 mx-auto col-md-6 my-3">
+        <div>
+            <p class="product_desc">Release Description</p>
+            <p class="text-justify product_text">
+                Return of the Mac is the first collaboration studio album by American rapper Prodigy of Mobb Deep and producer The Alchemist, released on March 27, 2007 through E1 Music. The album was intended to be a mixtape serving as a prequel to Prodigy's next album, H.N.I.C. Pt. 2, but was released as a traditional album due to the unexpected level of quality of the record. The album was produced by The Alchemist (who is featured on the cover) and it features songs sampled from the Blaxploitation era.
+                Return of the Mac debuted at number thirty-two on the Billboard 200, selling 27,000 copies in its first week. As of December 2007, the album had sold 130,000 copies. The album received notable critical acclaim, and is considered somewhat of a return to form for Prodigy, as many considered him to have "fallen off" after the 2001 Mobb Deep release Infamy. Return of the Mac has been very successful, as Prodigy's upcoming LP, H.N.I.C. Pt. 2, became one of the more anticipated hip hop albums of 2008.
+                Return of the Mac has three singles with music videos directed by DanTheMan: "Mac 10 Handle", "New York Shit", and "Stuck on You".
+            </p>
+            <p class="text-justify product_text">Out of stock</p>
+        </div>
+    </div>
+
+
+
+
+{% endblock content %}
+</body>
+</html>
