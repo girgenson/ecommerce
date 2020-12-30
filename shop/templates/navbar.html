@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-md navbar-light bg-dark">
+    <a href="/" class="navbar-brand" ><i id="icon228" class="material-icons material-icons md-48">store</i></a>
+    <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+    <div id="navbar" class="collapse navbar-collapse justify-content-between">
+
+        <ul class="navbar-nav">
+            <li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Category 1</button>
+                <button class="dropdown-item" type="button">Category 2</button>
+                <button class="dropdown-item" type="button">Category 3</button>
+                <button class="dropdown-item" type="button">Category 4</button>
+                <button class="dropdown-item" type="button">Category 5</button>
+              </div>
+            </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'go_to_product_page' %}">About</a></li>
+        </ul>
+
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" placeholder="Search">
+                <div>
+                    <button><i id="icon228" class="material-icons material-icons md-24">search</i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
