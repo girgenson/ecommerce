@@ -10,11 +10,10 @@
                 Categories
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Category 1</button>
-                <button class="dropdown-item" type="button">Category 2</button>
-                <button class="dropdown-item" type="button">Category 3</button>
-                <button class="dropdown-item" type="button">Category 4</button>
-                <button class="dropdown-item" type="button">Category 5</button>
+                  <a class="dropdown-item" type="button" href="{% url 'go_to_home_page' %}">All Products</a>
+              {% for category in links %}
+                  <a class="dropdown-item" type="button" href="{{ category.get_url }}">{{ category.name }}</a>
+              {% endfor %}
               </div>
             </div>
             </li>
