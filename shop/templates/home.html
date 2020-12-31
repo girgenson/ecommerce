@@ -37,10 +37,10 @@
                         </div>
 
                         <div class="card-footer d-flex justify-content-between" style="background: #d5d5d5; opacity: 1; border-color: honeydew">
-                            <p class="font-weight-bold mb-0" style="color: #000000">
+                            <p class="font-weight-bold mb-0">
                                 {{ product.name }}
                             </p>
-                            <h5 style="color: black; font-family: 'Futura Md BT'; font-size: 1em">${{ product.price }}</h5>
+                            <p class="text-info font mb-1">${{ product.price }}</p>
                         </div>
                     </div>
                 </div>
@@ -50,3 +50,10 @@
 {% endblock content %}
 
 
+<div style="display: table; height: 400px; overflow: hidden;">
+  <div style="display: table-cell; vertical-align: middle;">
+    <div>
+
+    </div>
+  </div>
+</div>
