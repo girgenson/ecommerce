@@ -32,7 +32,7 @@
                     <div class="card mb-4">
                         <div class="p-4">
                            {% if product.image %}
-                                <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <a href="{{ product.get_url }}"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
                            {% endif %}
                         </div>
 
