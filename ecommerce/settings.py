@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,4 @@ STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'ecommerce/static/media'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
